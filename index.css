@@ -20,3 +20,9 @@ body, html{
     height: 10px;
     position: absolute;
 }
+.Shock{
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    position: absolute;
+}

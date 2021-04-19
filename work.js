@@ -10,6 +10,16 @@ let Tock = {
     x: 0,
     y: 0,
 }
+
+
+let Shock = {
+    id: 'Shock',
+    step: 10,
+    x: 0,
+    y: 0,
+}
+
+renderTock (Tock)
 // let sump = setInterval(checkButton(), 200);
 // let Adw = setInterval(Adwenty, 1000);
 

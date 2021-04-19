@@ -5,7 +5,7 @@ function checkButton(event){
     if (event.keyCode===38){
         console.log('Stock');
         if(Stock.x>0){
-            Stock.x+=Stock.step;
+            
         }
 
         
@@ -16,14 +16,16 @@ function checkButton(event){
     if (event.keyCode === 40){
         console.log('Tock')
         if(Tock.x>0){
-            Tock.x+=Tock.step;
+            
         }
-        renderTock(Tock);
+       
     }
 
     // Adwenty(renderStock(Stock))
 
 }
+
+
 
 // function say (Stock){
 //     if(Stock.x>0){
@@ -40,14 +42,24 @@ function renderStock (Stock){
 }
 
 
+
+
+
 function renderTock (Tock){
     document.getElementById(Tock.id).style.top=Tock.y + 'px';
     document.getElementById(Tock.id).style.left=Tock.x + 'px';
+    let i = 1;
+    setTimeout(function() {
+        Tock.y+=Tock.step;
+        renderTock (Tock)
+        
+
+      }, 2000)
+    
 }
 
 // function ser (Stock){;
 // }
-setInterval((Stock) => Stock.x+=Stock.step, 2000);
 
 
 // function Adwenty(Stock) {
