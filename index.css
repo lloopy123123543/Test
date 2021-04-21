@@ -26,3 +26,21 @@ body, html{
     background-color: pink;
     position: absolute;
 }
+
+.ent{
+    margin-top: 0px;
+    margin-left: 1000px;
+    background-color: Red;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.entPos{
+    margin-top: 0px;
+    margin-left: 1000px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}

@@ -19,9 +19,20 @@ let Shock = {
     y: 0,
 }
 
-renderTock (Tock)
-// let sump = setInterval(checkButton(), 200);
-// let Adw = setInterval(Adwenty, 1000);
+let ent = {
+    id: 'ent',
+    step: 10,
+    x: 0,
+    y: 0,
+}
 
+let entPos = {
+    id: 'entPos',
+    step: 10,
+    x: 0,
+    y: 0,
+}
 
-// let timerId = setInterval((ser), 2000);
+renderTock (Tock);
+
+renderEnt(ent)

@@ -58,6 +58,60 @@ function renderTock (Tock){
     
 }
 
+// function randomInteger(min, max) {
+//     // получить случайное число от (min-0.5) до (max+0.5)
+//     let rand = min - 0.5 + Math.random() * (max - min + 1);
+//     return Math.round(rand);
+//   }
+  
+//   alert( randomInteger(0, 1) );
+
+//   function Chack(){
+      
+//   }
+
+
+
+
+
+
+
+
+
+function renderEntPos (entPos){
+    document.getElementById(entPos.id).style.top=entPos.y + 'px';
+    document.getElementById(entPos.id).style.left=entPos.x + 'px';
+    setTimeout(function(){
+        entPos.x-=entPos.step;
+        renderEntPos (entPos);
+        
+    }, 2000)
+
+
+
+    }
+    
+
+    function renderEnt (ent){
+        document.getElementById(ent.id).style.top=ent.y + 'px';
+        document.getElementById(ent.id).style.left=ent.x + 'px';
+        setTimeout(function(){
+            ent.x-=ent.step;
+            renderEnt (ent);
+            
+        }, 2000)
+
+
+    
+        }
+
+
+
+
+
+   
+    
+
 // function ser (Stock){;
 // }
 
