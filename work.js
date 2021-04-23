@@ -32,6 +32,14 @@ let entPos = {
     x: 0,
     y: 0,
 }
+let Sock = {
+    id: 'Sock',
+    color: 'pink',
+    x: 0,
+    y: 0
+}
+
+
 
 renderTock (Tock);
 

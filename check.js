@@ -15,9 +15,7 @@ function checkButton(event){
 
     if (event.keyCode === 40){
         console.log('Tock')
-        if(Tock.x>0){
-            
-        }
+        
        
     }
 
@@ -78,35 +76,46 @@ function renderTock (Tock){
 
 
 
-function renderEntPos (entPos){
-    document.getElementById(entPos.id).style.top=entPos.y + 'px';
-    document.getElementById(entPos.id).style.left=entPos.x + 'px';
-    setTimeout(function(){
-        entPos.x-=entPos.step;
-        renderEntPos (entPos);
+// function renderEntPos (entPos){
+    // document.getElementById(entPos.id).style.top=entPos.y + 'px';
+    // document.getElementById(entPos.id).style.left=entPos.x + 'px';
+//     setTimeout(function(){
+//         entPos.x-=entPos.step;
+//         renderEntPos (entPos);
         
-    }, 2000)
+//     }, 2000)
 
 
 
-    }
+//     }
     
 
+
+
     function renderEnt (ent){
+        document.getElementById(entPos.id).style.top=entPos.y + 'px';
+        document.getElementById(entPos.id).style.left=entPos.x + 'px';
         document.getElementById(ent.id).style.top=ent.y + 'px';
         document.getElementById(ent.id).style.left=ent.x + 'px';
         setTimeout(function(){
             ent.x-=ent.step;
             renderEnt (ent);
+            entPos.x = Math.floor(Math.random() * (300 - 800)) + 800;
+            entPos.y = Math.floor(Math.random() * (300 - 800)) + 800;
             
         }, 2000)
+
 
 
     
         }
 
 
-
+function test(Shock){
+    document.getElementsByClassName('Shock')
+    
+}
+test();
 
 
    
